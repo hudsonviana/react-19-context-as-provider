@@ -1,10 +1,13 @@
-import React from 'react'
+import Content from './components/Content.jsx'
+import Header from './components/Header.jsx'
+import ThemeProvider from './provider/ThemeProvider.jsx'
 
 function App() {
   return (
-    <div className="text-blue-500 underline text-5xl font-bold">
-      Teste Tailwind
-    </div>
+    <ThemeProvider>
+      <Header />
+      <Content />
+    </ThemeProvider>
   )
 }
 
